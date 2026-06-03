@@ -43,18 +43,6 @@ uv run python manage.py createsuperuser
 uv run python manage.py runserver
 ```
 
-## Environment Variables
-
-```
-SECRET_KEY=
-DEBUG=True
-DATABASE_URL=
-ALLOWED_HOSTS=
-CORS_ALLOWED_ORIGINS=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
-ANTHROPIC_API_KEY=
-```
 
 ## API Endpoints
 
