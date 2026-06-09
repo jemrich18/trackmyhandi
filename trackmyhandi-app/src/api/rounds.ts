@@ -1,5 +1,5 @@
 import apiClient from './client'
-import { Round, RoundFormData } from '../types'
+import type { Round, RoundFormData } from '../types'
 
 export const getRounds = async (): Promise<Round[]> => {
   const { data } = await apiClient.get<Round[]>('/api/rounds/')

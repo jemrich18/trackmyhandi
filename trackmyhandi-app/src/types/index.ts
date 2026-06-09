@@ -8,12 +8,12 @@ export interface User {
 
 
 export interface Round {
-    id: number 
-    score: number 
-    course_name: string 
-    course_rating: number 
-    slope_number: number 
-    date_played: string 
+    id: number
+    score: number
+    course_name: string
+    course_rating: number
+    slope_rating: number
+    date_played: string
     weather: 'sunny' | 'cloudy' | 'windy' | 'rainy' | null
     wind_strength: 'none' | 'light' | 'moderate' | 'strong' | null
     green_speed: 'slow' | 'normal' | 'fast' | null
@@ -21,6 +21,7 @@ export interface Round {
     fairway_conditions: 'wet' | 'normal' | 'dry' | 'firm' | null
     miss_category: 'driving' | 'iron_play' | 'chipping' | 'putting' | 'bunker' | null
     notes: string | null
+    score_differential: number
     created_at: string
 }
 
